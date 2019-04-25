@@ -8,4 +8,6 @@ Django Rest Framework 3.9 sample project.
 3- pip install django
 4- pip install djangorestframework
 5- python manage.py migrate
-6- python manage.py runserver
+6- python manage.py createsuperuser --email admin@example.com --username admin
+7- python manage.py runserver
+
