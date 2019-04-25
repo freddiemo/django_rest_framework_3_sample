@@ -7,7 +7,8 @@ Django Rest Framework 3.9 sample project.
 2- source DRFenv/bin/activate
 3- pip install django
 4- pip install djangorestframework
-5- python manage.py migrate
-6- python manage.py createsuperuser --email admin@example.com --username admin
-7- python manage.py runserver
+5- pip install pygments
+6- python manage.py migrate
+7- python manage.py createsuperuser --email admin@example.com --username admin
+8- python manage.py runserver
 
