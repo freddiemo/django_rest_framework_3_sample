@@ -1,0 +1,4 @@
+Django==2.2
+Pygments==2.3.1
+Mysqlclient==1.4.2
+Djangorestframework==3.9.2
