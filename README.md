@@ -1,7 +1,15 @@
-# About
+# Django Rest Framework 3 sample
 Django Rest Framework 3.9 sample project.
 
-# Instructions
+## Table of Contents
+
+* [Instructions](#Instructions)
+* [Screenshots](#Screenshots)
+* [Testing endpoints](#Testing-endpoints)
+    * [Get a list of all of the snippets.](#Get-a-list-of-all-of-the-snippets)
+    * [Get a particular snippet by referencing its id.](#Get-a-particular-snippet-by-referencing-its-id)
+
+## Instructions
 1. git clone https://github.com/freddiemo/django_rest_framework_3_sample.git
 2. virtualenv DRFenv
 3. source DRFenv/bin/activate
@@ -13,11 +21,12 @@ Django Rest Framework 3.9 sample project.
 9. open in the browser http://localhost:8000
 10. open in the browser http://localhost:8000/admin and login with "admin" and and place the password configured in the super admin user created
 
-# Screenshot
+## Screenshots
 ![1-mainUrl](images/1-mainUrl.png)
 
-# Testing enpoints
-1. Get a list of all of the snippets.
+## Testing endpoints
+### Get a list of all of the snippets.
+```javascript
 http http://127.0.0.1:8000/snippets/
 HTTP/1.1 200 OK
 ...
@@ -39,7 +48,9 @@ HTTP/1.1 200 OK
         "title": ""
     }
 ]
-2. Get a particular snippet by referencing its id.
+```
+### Get a particular snippet by referencing its id.
+```javascript
 http http://127.0.0.1:8000/snippets/2/
 HTTP/1.1 200 OK
 ...
@@ -51,3 +62,4 @@ HTTP/1.1 200 OK
     "style": "friendly",
     "title": ""
 }
+```
