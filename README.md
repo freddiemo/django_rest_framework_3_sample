@@ -16,3 +16,38 @@ Django Rest Framework 3.9 sample project.
 # Screenshot
 ![1-mainUrl](images/1-mainUrl.png)
 
+# Testing enpoints
+1. Get a list of all of the snippets.
+http http://127.0.0.1:8000/snippets/
+HTTP/1.1 200 OK
+...
+[
+    {
+        "code": "foo = \"bar\"\n",
+        "id": 1,
+        "language": "python",
+        "linenos": false,
+        "style": "friendly",
+        "title": ""
+    },
+    {
+        "code": "print(\"hello, world\")\n",
+        "id": 2,
+        "language": "python",
+        "linenos": false,
+        "style": "friendly",
+        "title": ""
+    }
+]
+2. Get a particular snippet by referencing its id.
+http http://127.0.0.1:8000/snippets/2/
+HTTP/1.1 200 OK
+...
+{
+    "code": "print(\"hello, world\")\n",
+    "id": 2,
+    "language": "python",
+    "linenos": false,
+    "style": "friendly",
+    "title": ""
+}
