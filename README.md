@@ -1,5 +1,5 @@
 # Django Rest Framework 3 sample
-Django Rest Framework 3.9 sample project.
+Django Rest Framework 3.9 sample project, with ViewSets, custom permissions and HyperlinkedModelSerializer.
 
 ## Table of Contents
 
