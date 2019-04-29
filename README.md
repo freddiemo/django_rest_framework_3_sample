@@ -24,6 +24,9 @@ Django Rest Framework 3.9 sample project.
 
 ## Screenshots
 ![1-mainUrl](images/1-mainUrl.png)
+![2-snippetsList](images/2-snippetsList.png)
+![3-snippetsDetail](images/3-snippetsDetail.png)
+![4-snippetsDetail-2](images/4-snippetsDetail-2.png)
 
 ## Testing endpoints
 ### Get a list of all of the snippets.
