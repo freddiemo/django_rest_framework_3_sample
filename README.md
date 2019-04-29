@@ -67,7 +67,7 @@ HTTP/1.1 200 OK
 ### Post a Snippet.
 ```javascript
 POST using form data.
-http --form POST http://127.0.0.1:8000/snippets/ code="print(123)"
+http --form -a admin:'yourSuperUserPassword' POST http://127.0.0.1:8000/snippets/ code="print(123)"
 HTTP/1.1 201 Created
 ...
 {
@@ -82,7 +82,7 @@ HTTP/1.1 201 Created
 ```
 ```javascript
 POST using JSON.
-http --json POST http://127.0.0.1:8000/snippets/ code="print(456)"
+http --json -a admin:'yourSuperUserPassword' POST http://127.0.0.1:8000/snippets/ code="print(456)"
 HTTP/1.1 201 Created
 ...
 {
